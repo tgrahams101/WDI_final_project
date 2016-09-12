@@ -1,0 +1,14 @@
+<h2> Vines and shit </h2>
+
+<% @vines.first(3).each do |vine| %>
+
+<%= raw vine.embed_tag(:postcard) %>
+<br>
+<br>
+
+
+<% end %>
+
+
+<%= link_to 'Twitter Update', tweet_path, method: :post %>
+<%= link_to 'Twitter Tweets', tweets_path %>

@@ -1,0 +1,21 @@
+<h1>Searching for - <%= @search_term %> </h1>
+<table border="1">
+  <tr>
+    <th> Image </th>
+    <th> Name </th>
+    <th> Description </th>
+  </tr>
+  <% if @courses %>
+      <% @courses.each do |course| %>
+        <tr>
+          <td> <%= image_tag(course["smallIcon"])%></td>
+          <td> <%= course["name"] %> </td>
+          <td> <%= course["shortDescription"] %></td>
+        </tr>
+      <% end %>
+  <% else %>
+      <tr>
+        <td colspan="3"> No content to display </td >
+      </tr>
+  <% end %>
+</table>
