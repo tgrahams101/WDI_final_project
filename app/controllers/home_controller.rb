@@ -2,6 +2,7 @@ require 'httparty'
 require 'redvine'
 
 class HomeController < ApplicationController
+  skip_before_action :authorize, only: [:index]
 
 
 
@@ -11,9 +12,9 @@ class HomeController < ApplicationController
 
   def index
 
-    response = HTTParty.get('http://api.stackexchange.com/2.2/questions?site=stackoverflow')
+    # response = HTTParty.get('http://api.stackexchange.com/2.2/questions?site=stackoverflow')
 
-    puts response.body, response.code, response.message, response.headers.inspect
+    # puts response.body, response.code, response.message, response.headers.inspect
 
     # client = Redvine.new
     # client.connect(email: ENV["VINE_USERNAME"], password: ENV["VINE_PASSWORD"])
@@ -74,7 +75,7 @@ class HomeController < ApplicationController
   #   tweet.to_h.to_json
   end
   render 'embedded_twitter'
-  # 
+  #
   #
   # render plain: @stuff.first
 

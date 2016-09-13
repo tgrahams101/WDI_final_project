@@ -1,0 +1,12 @@
+<h2> User Profile</h2>
+
+<p> Name: <%= current_user.name %> </p>
+<p> Email: <%= current_user.email %> </p>
+
+
+
+<%= link_to 'Edit profile', edit_user_path(current_user) %> <br>
+
+<%= link_to 'Home', root_path %>
+<br>
+<%= link_to 'Logout', logout_path %>
