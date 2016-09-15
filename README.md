@@ -1,11 +1,14 @@
 ## Sportvine
 
-> Sportvine is a media dashboard that lets you view live streams of social media content being posted about your favorite > NFL teams, from Vine videos, Periscope broadcasts, to tweets. Check it out here:
+> Sportvine is a media dashboard that lets you view live streams of social media content being posted about your favorite  NFL teams, from Vine videos, Periscope broadcasts, to tweets. A stylized, nicely presented iteration of the feature can be found here:
 
 www.sportlineapp.com/mediavine
 
 
-Github link for the sportvine feature
+The Github link has the underlying code for the feature that is stylized/nicely presented at sportline.com/mediavine.
+
+*Note that specific modules in the views are generated via the Twitter embedded timelines feature (https://dev.twitter.com/web/embedded-timelines) of their API through a developer key. You can request a developer key by signing up as a developer on dev.twitter.com
+
 https://github.com/tgrahams101/WDI_final_project
 
 ####Technologies used:
@@ -28,7 +31,8 @@ Sportvine is a feature that allows you to view real-time Vines, tweets, and Peri
 
 ####Planning:
 
-####Scope: A sports social media feed that integrates with several social media platforms (Vine, Instagram, Giphy, Twitter) and shows content that @mentions NFL teams. Filterable by team/platform
+####Scope:
+A sports social media feed that integrates with several social media platforms (Vine, Instagram, Giphy, Twitter) and shows content that @mentions NFL teams. Filterable by team/platform
 
 ####User stories:
 

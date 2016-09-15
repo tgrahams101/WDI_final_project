@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  def gucci
+  def twitter
         @client = Twitter::REST::Client.new do |config|
         config.consumer_key        = ENV['TWITTER_KEY']
         config.consumer_secret     = ENV['TWITTER_SECRET']
@@ -9,7 +9,8 @@ module ApplicationHelper
       end
   end
 
-
+  # The code below is code that I got from a public gist that pulls Vine videos. Note that I modified the code to work for my app (Vine has no official API for accessing its content)
+  # https://gist.github.com/jakebellacera/8324573
   class API
     include HTTParty
     # "https://api.coursera.org/api/courses.v1?q=search&query=malware+underground"

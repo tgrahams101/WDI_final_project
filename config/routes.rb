@@ -29,13 +29,17 @@ Rails.application.routes.draw do
 
   get 'yoga', to: 'home#yoga'
 
-  get 'giphy', to: 'home#giphy'
+  get 'gifs', to: 'home#giphy', as: 'gifs'
 
-  get 'vine', to: 'home#vine'
+  # get 'vine', to: 'home#vine'
+  #
+  # post 'vine', to: 'home#vineget'
 
-  post 'vine', to: 'home#tweet', as: 'tweet'
+  get 'periscope', to: 'home#periscope', as: 'periscope'
 
-  get 'tweets', to: 'home#get_tweets', as: 'tweets'
+  get 'tweets', to: 'home#tweet', as: 'tweet'
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
